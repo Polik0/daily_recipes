@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Daily meals</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="ua-recipes.html" class="logo">Daily meals</a>
+      <div class="menu"></div>
+    </header>
+    <main class="main">
+      <section class="description">
+        <h1 class="description-title">Find your day's meal</h1>
+        <hr class="title-hr" />
+        <p class="description-subtitle">
+          Recipes for first and second dishes as well as salads and desserts.
+          Thousands of ideas are collected here to make your meal wonderful!
+          Read, cook and enjoy! And dont't forget to share with your loved ones)
+        </p>
+        <form role="search" id="search-form" class="search-form">
+          <input
+            type="search"
+            id="query"
+            name="q"
+            class="search-input"
+            placeholder="Search..."
+          />
+          <button class="search-btn"></button>
+        </form>
+      </section>
+      <div class="loader">Loading...</div>
+      <section class="dish-menu">
+        <ul id="recipeList" class="recipe-list"></ul>
+      </section>
+    </main>
+
+    <script src="recipes.js"></script>
+  </body>
+</html>
